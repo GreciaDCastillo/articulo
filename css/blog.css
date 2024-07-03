@@ -1,0 +1,201 @@
+:root {
+    --lavender-pink: #F8AADC;
+    --marian-blue: #444796;
+    --photo-flue: #8FDCF0;
+    --platinum: #D9F0FA;
+    --sky-magenta: #CA6BA9;
+    --magenta-haze: #A34382;
+    --tea-green: #C3DDBC;
+    --wisteria: #BF9ADD;
+    --header-bg: #698D63;
+    --text-main: #43534e;
+    --text-secondary: #547468;
+    --background-main: #f0ffd5bf;
+    --border-main: #fcfff5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    list-style: none;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../img/Blog/fondo.jpg);
+    background-size: 50%;
+}
+
+.container {
+    max-width: 550px;
+    margin: 20px auto;
+    background: var(--tea-green) url(../img/Blog/fondo_de_fondo.png) repeat;
+    background-size: 28%;
+    box-shadow: #4158455a 0px 0px 10px 5px;
+}
+
+.container header {
+    padding: 30px;
+    background: var(--header-bg) url(../img/Blog/40af9623a5510048fb4f6fdcd96eb976.jpg) 100% 100% / cover;
+}
+
+.container header h1 {
+    font-size: 25px;
+    font-family: 'Pirata One', cursive;
+    color: #f4fde3;
+    text-shadow: 1px 1px 5px #12311c;
+    text-align: end;
+}
+
+.container header hr {
+    border: none;
+    border-top: 3px solid var(--background-main);
+}
+
+.container2 {
+    display: flex;
+    align-content: space-around;
+    padding: 20px;
+    height: 380px;
+}
+
+.nav, .links, .blog {
+    background-color: var(--background-main);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.nav {
+    padding: 12px;
+}
+
+.nav h3, .links h3 {
+    font-size: 15px;
+    font-family: 'Pirata One', cursive;
+    color: var(--header-bg);
+}
+
+.nav ul {
+    width: 80px;
+    margin: auto;
+}
+
+.nav li {
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 1px;
+    border: 2px solid var(--border-main);
+    background-color: #a8c69f;
+    margin: 3px 0;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(../img/Blog/pfp_danny.jpg) 60% 40% / cover no-repeat;
+    border: 4px solid var(--border-main);
+    margin: 12px 0;
+    box-shadow: 0 0 6px 1px #9dc0a97b;
+}
+
+.blog {
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #e2f7dd;
+    overflow: auto;
+    border: 4px dashed var(--border-main);
+}
+
+.blog h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    width: 150px;
+    font-family: 'Trochut', cursive;
+    color: var(--header-bg);
+}
+
+.blog hr {
+    border: none;
+    margin: 3px 0;
+    padding-bottom: 20px;
+    border-top: 3px solid #79a58e;
+}
+
+.blog p, .blog h3 {
+    text-align: start;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-main);
+}
+
+.blog h3 {
+    font-size: 13px;
+    text-align: center;
+}
+
+.blog button {
+    background-color: #a8c69f;
+    border: none;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 2px solid var(--header-bg);
+    color: var(--text-secondary);
+    box-shadow: inset 0px 2px 6px 1px #e4ffbc7b;
+    box-shadow: 1px 1px 6px 1px rgba(106, 124, 113, 0.453);
+}
+
+.blog button:hover {
+    background-color: #79a58e;
+}
+
+.blog button:active {
+    background-color: #bbd8ae;
+}
+
+.image {
+    position: relative;
+    float: inline-end;
+    bottom: 20px;
+    display: inline-block;
+}
+
+img {
+    width: 170px;
+}
+
+footer {
+    background-color: #a8c69f;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    color: #486f5b;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--border-main);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a8c69f;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #90b190;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 210, 169);
+}

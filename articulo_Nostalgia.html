@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Parallax</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/funciones.js" defer></script> <!-- Defer agregado -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lavender_pink: '#f8aadc',
+            marian_blue: '#444796',
+            photo_flue:'#8FDCF0',
+            platinum: '#D9F0FA',
+            sky_magenta: '#CA6BA9',
+            magenta_haze: '#A34382',
+            tea_green: '#C3DDBC',
+            wisteria: '#BF9ADD',
+          }
+        }
+      }
+    }
+</script>
+<body>
+    <div class="escenario-container">
+        <iframe src="escenario1.html" frameborder="0" class="escenario-iframe"></iframe>    
+        <div id="escenario-2" class="escenario-2 slide h-screen bg-fondo2 bg-cover bg-fixed z-5">
+            <div class="container mx-auto py-20 px-20">
+                <h3 class="text-center text-indigo-800 text-[100px] font-semibold font-['Exo 2']">Los años 2000</h3>
+                <div class="text-center text-blue-100 text-[29px] font-normal font-['Quicksand']">Los años 2000 fueron una época de grandes cambios y transformaciones en la cultura y el diseño. La llegada de internet y las nuevas tecnologías digitales revolucionaron la forma en que las personas se comunicaban, consumían información y se entretenían. Esto tuvo un impacto profundo en todos los aspectos del diseño, desde la estética visual hasta la forma en que se creaban y experimentaban los productos.</div>
+            </div>
+            <div class="elemento-1">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="escenario-3" class="escenario-3 slide h-screen bg-fondo3 bg-cover bg-fixed">
+            <div class="container_2 w-4/3 mx-80 py-80">
+                <div class="elemento-1 p-20">
+                    <p class="text-3xl font-['Quicksand']">Las redes sociales como Facebook, Twitter y MySpace se convirtieron en populares plataformas para conectarse con amigos y familiares. Estas plataformas también se convirtieron en herramientas para el activismo social y la movilización ciudadana, permitiendo a las personas organizarse y expresar sus opiniones sobre una amplia gama de temas.</p>
+                </div>
+                <div class="elemento-2 hidden">
+                    <p>Por ahi tambien, presenciaron la expansión masiva de Internet en los hogares de todo el mundo. Con la creciente disponibilidad de conexiones de banda ancha, las personas comenzaron a pasar más tiempo en línea, explorando nuevas oportunidades de comunicación, entretenimiento y comercio electrónico.</p>
+                </div>
+                <div class="elemento-3">
+                    <div class="imagen-1"></div>
+                    <div class="imagen-2"></div>
+                    <div class="imagen-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data === 'nextScenario') {
+                // Aquí cambias las pantallas o escenarios.
+                console.log('Cambiar a siguiente escenario');
+                // Ejemplo: mostrar otra pantalla
+                document.getElementById('escenario-1').style.display = 'none';
+                document.getElementById('escenario-2').style.display = 'block';
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
+
