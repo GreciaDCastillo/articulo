@@ -1,207 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escenario 1</title>
-    <link rel="stylesheet" href="css/esc1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/esc1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                lavender_pink: '#f8aadc',
-                marian_blue: '#444796',
-                photo_flue:'#8FDCF0',
-                platinum: '#D9F0FA',
-                sky_magenta: '#CA6BA9',
-                magenta_haze: '#A34382',
-                tea_green: '#C3DDBC',
-                wisteria: '#BF9ADD',
-              }
-            }
-          }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lavender_pink: '#f8aadc',
+              marian_blue: '#444796',
+              photo_flue: '#8FDCF0',
+              platinum: '#D9F0FA',
+              sky_magenta: '#CA6BA9',
+              magenta_haze: '#A34382',
+              tea_green: '#C3DDBC',
+              wisteria: '#BF9ADD',
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body>
-
-    <div class="escenario-1 slide h-screen bg-fondo1 bg-cover bg-fixed">
-        <div class="computer z-10"></div>
-        <div class="container-compu">
-            <div class="fondo-compu">
-                <div class="menu-compu">
-                    <div class="start">
-                        <div class="logo"></div>
-                        <h3>start</h3>
-                    </div>
-                    <div class="menu-ventana"></div>
-                    <div class="ventanas">
-                        <div class="ventana-1">
-                            <div class="header">
-                                <div class="logo"></div>
-                                <div class="title">warning</div>
-                                <div class="botones">
-                                    <div class="minimizar">
-                                        <div class="min-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="maximizar">
-                                        <div class="max-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="cerrar">
-                                        <div class="close-icon"></div>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="body">
-                                <div class="image-warning">
-                                </div>
-                                <div class="container-warning">
-                                    <p>aparecio una inesperada experiencia </p>
-                                    <div class="buttons">
-                                        <button  class="btn_inicio_Warning">OK</button>
-                                    </div>   
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="ventana-2">
-                            <div class="header">
-                                <div class="logo"></div>
-                                <div class="title">Setup</div>
-                                <div class="botones">
-                                    <div class="minimizar">
-                                        <div class="min-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="maximizar">
-                                        <div class="max-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="cerrar">
-                                        <div class="close-icon"></div>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="body">
-                                <div class="image-set-up">
-                                    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnM1YnN0dmJ1OHdicHFpb2trYnl1Z2R2M2NsNXBpOHpjNDhib3BoNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qYB8TnulLbigHPwe24/giphy-downsized.gif" alt="">
-                                </div>
-                                <div class="container-set-up">
-                                    <h3>Antes de continuar</h3>
-                                    <p>El siguiente reporte está basado en muchos de los puntos de vista del autor, pero fue hecho con amor y dedicación.</p>
-                                    <p>¿Desea continuar?</p>
-                                    <div class="buttons">
-                                        <div class="buttons1">
-                                            <button>Back</button>
-                                            <button>Next</button>
-                                        </div>
-                                        <button  class="btn_acept">Acept</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ventana-3">
-                            <div class="header">
-                                <div class="logo"></div>
-                                <div class="title">not Danny, just me - Blog</div>
-                                <div class="botones">
-                                    <div class="minimizar">
-                                        <div class="min-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="maximizar">
-                                        <div class="max-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="cerrar">
-                                        <div class="close-icon"></div>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu">
-                                <ul>
-                                    <li>file</li>
-                                    <li>edit</li>
-                                    <li>search</li>
-                                    <li>help</li>
-                                </ul>
-                            </div>
-                            <div class="buscador">
-                                <button><p>></p></button>
-                                <p>address</p>
-                                <input type="text" >
-                            </div>
-                            <div class="body">
-                                <div class="container-blog">
-                                    <iframe id="blog-iframe" src="/miniBlog.html" frameborder="1"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="warning2">
-                            <div class="header">
-                                <div class="logo"></div>
-                                <div class="title">warning</div>
-                                <div class="botones">
-                                    <div class="minimizar">
-                                        <div class="min-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="maximizar">
-                                        <div class="max-icon"></div>
-                                        <button></button>
-                                    </div>
-                                    <div class="cerrar">
-                                        <div class="close-icon"></div>
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="body">
-                                <div class="image-warning">
-                                </div>
-                                <div class="container-warning">
-                                    <p>Desea continuar? </p>
-                                    <div class="buttons">
-                                        <button id="accept-button" class="btn_acept">Aceptar</button>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                        </div>
-                    </div>
-                </div>
+  </head>
+  <body>
+    <div
+      class="escenario-1 slide h-screen bg-fondo1 bg-cover bg-fixed"
+      id="escenario1"
+    >
+      <div class="computer z-10"></div>
+      <div class="container-compu">
+        <div class="fondo-compu">
+          <div class="menu-compu">
+            <div class="start">
+              <div class="logo"></div>
+              <h3>start</h3>
             </div>
+            <div class="menu-ventana"></div>
+            <div class="ventanas">
+              <div class="ventana-1">
+                <div class="header">
+                  <div class="logo"></div>
+                  <div class="title">warning</div>
+                  <div class="botones">
+                    <div class="minimizar">
+                      <div class="min-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="maximizar">
+                      <div class="max-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="cerrar">
+                      <div class="close-icon"></div>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="body">
+                  <div class="image-warning"></div>
+                  <div class="container-warning">
+                    <p>aparecio una inesperada experiencia</p>
+                    <div class="buttons">
+                      <button class="btn_inicio_Warning">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ventana-2">
+                <div class="header">
+                  <div class="logo"></div>
+                  <div class="title">Setup</div>
+                  <div class="botones">
+                    <div class="minimizar">
+                      <div class="min-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="maximizar">
+                      <div class="max-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="cerrar">
+                      <div class="close-icon"></div>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="body">
+                  <div class="image-set-up">
+                    <img
+                      src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnM1YnN0dmJ1OHdicHFpb2trYnl1Z2R2M2NsNXBpOHpjNDhib3BoNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qYB8TnulLbigHPwe24/giphy-downsized.gif"
+                      alt=""
+                    />
+                  </div>
+                  <div class="container-set-up">
+                    <h3>Antes de continuar</h3>
+                    <p>
+                      El siguiente reporte está basado en muchos de los puntos
+                      de vista del autor, pero fue hecho con amor y dedicación.
+                    </p>
+                    <p>¿Desea continuar?</p>
+                    <div class="buttons">
+                      <div class="buttons1">
+                        <button>Back</button>
+                        <button>Next</button>
+                      </div>
+                      <button class="btn_acept">Acept</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ventana-3">
+                <div class="header">
+                  <div class="logo"></div>
+                  <div class="title">not Danny, just me - Blog</div>
+                  <div class="botones">
+                    <div class="minimizar">
+                      <div class="min-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="maximizar">
+                      <div class="max-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="cerrar">
+                      <div class="close-icon"></div>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu">
+                  <ul>
+                    <li>file</li>
+                    <li>edit</li>
+                    <li>search</li>
+                    <li>help</li>
+                  </ul>
+                </div>
+                <div class="buscador">
+                  <button><p>></p></button>
+                  <p>address</p>
+                  <input type="text" />
+                </div>
+                <div class="body">
+                  <div class="container-blog">
+                    <iframe
+                      id="blog-iframe"
+                      src="/miniBlog.html"
+                      frameborder="1"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="warning2">
+                <div class="header">
+                  <div class="logo"></div>
+                  <div class="title">warning</div>
+                  <div class="botones">
+                    <div class="minimizar">
+                      <div class="min-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="maximizar">
+                      <div class="max-icon"></div>
+                      <button></button>
+                    </div>
+                    <div class="cerrar">
+                      <div class="close-icon"></div>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="body">
+                  <div class="image-warning"></div>
+                  <div class="container-warning">
+                    <p>Desea continuar?</p>
+                    <div class="buttons">
+                      <button id="accept-button" class="btn_acept">
+                        Aceptar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fondo">
-            <div class="compu-fondo"></div>
-            <div class="fondo-mesa"></div>
-            <div class="city-loop"></div>
-        </div>
+      </div>
+      <div class="fondo">
+        <div class="compu-fondo"></div>
+        <div class="fondo-mesa"></div>
+        <div class="city-loop"></div>
+      </div>
     </div>
     <script src="js/funciones.js"></script>
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('accept-button').addEventListener('click', function() {
-            window.parent.postMessage('nextScenario', '*');
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.location.href.includes('escenario1.html')) {
+          document
+            .getElementById('escenario1')
+            .classList.add('animate__animated', 'animate__fadeIn');
+        }
+        window.addEventListener('message', function (event) {
+          if (event.data === 'nextScenario') {
+            window.top.postMessage('nextScenario', '*');
+          }
         });
-    
-        document.getElementById('btn-aceptar').addEventListener('click', function() {
-            window.parent.postMessage('nextScenario', '*');
-        });
-    });
-    
+      });
     </script>
-</body>
+  </body>
 </html>

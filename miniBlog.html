@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Blog</title>
-    <link rel="stylesheet" href="css/blog.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<div class="container">
+    <link rel="stylesheet" href="css/blog.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="container">
     <header>
-        <h1>Not Danny, just me</h1> 
-        <hr>
+      <h1>Not Danny, just me</h1>
+      <hr />
     </header>
     <body>
-        <div class="container2">
-            <div class="nav">
-                <h3>Perfil</h3>
-                <div class="avatar"> 
-                </div>
-                <ul>
-                    <li>about</li>
-                    <li>contact</li>
-                    <li>help</li>
-                    <li>terms</li>
-                    <li>privacy</li>
-                </ul>
-                <div class="links">
-                    <h3>Links</h3>
-                    <ul>
-                        <li>twitter</li>
-                        <li>tmblr</li>
-                        <li>instagram</li>
-                        <li>github</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="blog">
-                <h2>Un Poco de Nostalgia</h2>
-                <hr>
-                <div class="image">
-                    <img src="https://64.media.tumblr.com/cd16931f5f1ccb631bf17603725cb6de/tumblr_pubsa4GfS41xvoqyho1_400.gifv" alt="">
-                </div>
-                <p>Mis primeros recuerdos en internet son en las compus de mi tío, en una Windows XP. </p>
-                <p>Yo me pasaba el día jugando, haciendo intentos de dibujos en el Paint y curioseando páginas para jugar algo o solo buscando esas de mis gustos de ese entonces, que estaban llenas de gifs, colores chillones y sobre todo, brillos por todas partes. </p>
-                <p>Era toda una experiencia...</p>
-                <p>Obviamente, mis experiencias en internet no fueron como las demás. Al ser tan pequeña, no pude experimentar toda la experiencia que daba esas épocas y a todo lo que molaba de internet.</p>
-                <p>A pesar de eso, le tengo un cariño tremendo a esos años. Y me encanta ver como a mas gente tambien les gusta esos tiempos. </p>
-                <p>Con eso dicho, me gustaría hablar de...</p>
-                <h3>Una apelacion a la Nostalgia</h3>  
-                <hr>
-                <button class="btn_acept">Continuar</button>  
-            </div>
-            
+      <div class="container2">
+        <div class="nav">
+          <h3>Perfil</h3>
+          <div class="avatar"></div>
+          <ul>
+            <li>about</li>
+            <li>contact</li>
+            <li>help</li>
+            <li>terms</li>
+            <li>privacy</li>
+          </ul>
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <li>twitter</li>
+              <li>tmblr</li>
+              <li>instagram</li>
+              <li>github</li>
+            </ul>
+          </div>
         </div>
-        <script>
-            document.querySelector(".btn_acept").addEventListener("click", function () {
-                window.parent.postMessage("showWarning2", "*");
-            });
-        </script>
-        
+        <div class="blog">
+          <h2>Un Poco de Nostalgia</h2>
+          <hr />
+          <div class="image">
+            <img
+              src="https://64.media.tumblr.com/cd16931f5f1ccb631bf17603725cb6de/tumblr_pubsa4GfS41xvoqyho1_400.gifv"
+              alt=""
+            />
+          </div>
+          <p>
+            Mis primeros recuerdos en internet son en las compus de mi tío, en
+            una Windows XP.
+          </p>
+          <p>
+            Yo me pasaba el día jugando, haciendo intentos de dibujos en el
+            Paint y curioseando páginas para jugar algo o solo buscando esas de
+            mis gustos de ese entonces, que estaban llenas de gifs, colores
+            chillones y sobre todo, brillos por todas partes.
+          </p>
+          <p>Era toda una experiencia...</p>
+          <p>
+            Obviamente, mis experiencias en internet no fueron como las demás.
+            Al ser tan pequeña, no pude experimentar toda la experiencia que
+            daba esas épocas y a todo lo que molaba de internet.
+          </p>
+          <p>
+            A pesar de eso, le tengo un cariño tremendo a esos años. Y me
+            encanta ver como a mas gente tambien les gusta esos tiempos.
+          </p>
+          <p>Con eso dicho, me gustaría hablar de...</p>
+          <h3>Una apelacion a la Nostalgia</h3>
+          <hr />
+          <button class="btn_acept">Continuar</button>
+        </div>
+      </div>
+      <script>
+        document
+          .querySelector('.btn_acept')
+          .addEventListener('click', function () {
+            window.parent.postMessage('showWarning2', '*');
+          });
+      </script>
     </body>
-   
-   
-
-</div>
-
+  </div>
 </html>
