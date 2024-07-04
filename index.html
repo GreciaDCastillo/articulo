@@ -56,18 +56,18 @@
         class="escenario-iframe"
       ></iframe>
 
-      <div id="escenario-2" class="escenario-2 hidden h-screen flex flex-col">
+      <div id="escenario-2" class="escenario-2 hidden h-screen flex flex-col mx-auto ">
         <section
-          class="container mx-auto py-20 px-20 flex items-center justify-items-center"
+          class="container h-screen mx-auto flex items-center justify-items-center"
         >
-          <div>
+          <div class="container py-40 px-40 m-auto">
             <h3
               class="text-center text-indigo-800 text-[100px] font-semibold font-['Exo 2']"
             >
               Los años 2000
             </h3>
             <p
-              class="text-center text-blue-100 text-[29px] font-normal font-['Quicksand']"
+             class=" text-center text-blue-100 text-[29px] font-normal font-['Quicksand']"
             >
               Los años 2000 fueron una época de grandes cambios y
               transformaciones en la cultura y el diseño. La llegada de internet
@@ -78,20 +78,29 @@
               creaban y experimentaban los productos.
             </p>
           </div>
+          <div class="elemento-1">
+            <div class="rounded-big"></div>
+            <div class="rounded-big"></div>
+            <div class="rounded-big"></div>
+        </div>
+        <div class="elemento-2">
+            <div class="rounded-Medium"></div>
+            <div class="rounded-Medium"></div>
+            <div class="rounded-Medium"></div>
+        </div>
+        <div class="elemento-3">
+            <div class="rounded-Small"></div>
+            <div class="rounded-Small"></div>
+            <div class="rounded-Small"></div>
+            <div class="rounded-Small"></div>
+        </div>
         </section>
         <section
           class="flex flex-col items-center justify-center h-screen w-full scroll-snap-align-start"
         >
-          <div class="text-white">aaaaaaa</div>
-        </section>
-      </div>
-      <div
-        id="escenario-3"
-        class="escenario-3 slide h-screen bg-fondo3 bg-cover bg-fixed hidden"
-      >
-        <div class="container_2 w-4/3 mx-80 py-80">
-          <div class="elemento-1 p-20">
-            <p class="text-3xl font-['Quicksand']">
+        <div class="container_2 m-auto px-20 relative">
+          <div class="elemento-1 py-20 px-20 m-auto flex absolute ">
+            <p class="text-3xl font-['Quicksand'] text-blue-100 w-1/2">
               Las redes sociales como Facebook, Twitter y MySpace se
               convirtieron en populares plataformas para conectarse con amigos y
               familiares. Estas plataformas también se convirtieron en
@@ -99,22 +108,61 @@
               permitiendo a las personas organizarse y expresar sus opiniones
               sobre una amplia gama de temas.
             </p>
+            <div class="elemento-3 absolute">
+              <div class="imagen-1"></div>
+              <div class="imagen-2"></div>
+              <div class="imagen-3"></div>
+            </div>
           </div>
-          <div class="elemento-2 hidden">
-            <p>
+          <div class="elemento-2 py-20 px-20 m-auto flex justify-end absolute hidden ">
+            <div class="elemento-3 absolute">
+              <div class="imagen-1"></div>
+              <div class="imagen-2"></div>
+              <div class="imagen-3"></div>
+            </div>
+            <p class="text-3xl font-['Quicksand'] text-blue-100 w-1/2 text-right">
               Por ahi tambien, presenciaron la expansión masiva de Internet en
               los hogares de todo el mundo. Con la creciente disponibilidad de
               conexiones de banda ancha, las personas comenzaron a pasar más
               tiempo en línea, explorando nuevas oportunidades de comunicación,
               entretenimiento y comercio electrónico.
+            </p> 
+          </div>
+        </div>  
+      </div>
+      </section>
+    </section>
+    </div>
+      <div
+        id="escenario-3" class="escenario-3 slide h-screen bg-fondo3 bg-cover bg-fixed hidden flex-col">
+      <section
+        class="container h-screen mx-auto py-20"> 
+          <div class="container px-40 py-40 m-auto flex justify-between gap-x-40 items-center inline-flex">
+            <p
+             class=" w-1/2 text-left text-blue-100 text-[29px] font-normal font-['Quicksand']"
+            >
+            Con el crecimiento de Internet, 
+            hubo una demanda creciente de 
+            diseño web. Los sitios web en 
+            los años 2000 a menudo presentaban 
+            diseños coloridos, animaciones Flash 
+            y elementos visuales llamativos. 
+            Sin embargo, también había una tendenc
+            ia hacia la simplicidad y la usabilidad, 
+            con un enfoque en la navegación intuitiva 
+            y la accesibilidad.
+            </p>
+            <p
+             class=" w-1/2 text-right text-blue-100 text-[29px] font-normal font-['Quicksand']"
+            >
+            Tambien el diseño de interfaces de usuariose volvió más importante. 
+            Introducioendo estilos visuales como el skeuomorfismo, que imitaba 
+            la apariencia de objetos del mundo real, y el diseño de "botones" en 
+            las interfaces gráficas de usuario.
             </p>
           </div>
-          <div class="elemento-3">
-            <div class="imagen-1"></div>
-            <div class="imagen-2"></div>
-            <div class="imagen-3"></div>
-          </div>
-        </div>
+      </section>
+        
       </div>
     </div>
 
@@ -127,11 +175,15 @@
             console.log('Cambiar a siguiente escenario');
             document.getElementById('escenario-1').style.display = 'none';
             const escenario2 = document.getElementById('escenario-2');
+            const escenario3 = document.getElementById('escenario-3');
             setTimeout(() => {
               escenario2.style.display = 'block';
+              escenario3.style.display = 'block';
               escenario2.classList.add('animate__animated', 'animate__fadeIn');
               escenario2.classList.add('visible');
+              escenario3.classList.add('visible');
               document.documentElement.classList.add('bg-marian_blue');
+
             }, 500);
           }
         });

@@ -21,11 +21,20 @@ html {
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden; 
 }
 body {
   position: relative;
   margin: 0;
 }
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .escenario-container {
   position: relative;
   height: 100%;
@@ -50,9 +59,6 @@ body {
   visibility: hidden;
   transition: opacity 1s ease, visibility 1s ease;
 }
-.escenario-2 {
-  padding-top: 10%;
-}
 .escenario-2 h3 {
   font-family: 'Exo 2';
   font-size: 70px;
@@ -65,18 +71,76 @@ body {
 .escenario-3.visible {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
+  z-index: 5;
 }
+
 .escenario-3 {
   background-color: #161730;
 }
 .container_2 {
-  width: 1253px;
+
+  width: 70em;
+  height: 39em;
   border-radius: 100px;
   background: rgba(255, 243, 246, 0.024);
-  box-shadow: inset 5px 2px 20px rgba(162, 212, 239, 0.291);
+  box-shadow: 10px 10px 15px 0px rgba(88, 106, 226, 0.20) inset, 15px 15px 20px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
-  border: 1px solid rgba(255, 243, 246, 0.69);
+}
+.container_2>.elemento-3{
+  position: absolute;
+  left: -30em;
 }
 
+.imagen-1, .imagen-2, .imagen-3 {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.imagen-1 {
+  width: 18em;
+  height: 15em;
+  background-image: url(../img/UkkUKhV.gif);
+  top: 9em;
+  left: 30em;
+}
+
+.imagen-2 {
+  width: 8em;
+  height: 400px;
+  background-image: url(../img/heartspin.gif);
+  top: 4em;
+  left: 46em;
+}
+
+.imagen-3 {
+  width: 5em;
+  height: 400px;
+  background-image: url(../img/heartspin.gif);
+  top: 18em;
+  left: 51em
+  ;
+}
+.container_2 .elemento-1 {
+  transition: opacity 1s ease; 
+}
+
+.container_2 .elemento-2 {
+  opacity: 0; 
+  transition: opacity 1s ease; 
+}
+
+.container_3 {
+  width: 70em;
+  height: 39em;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #161730 -12.01%, #22244B 34.2%, #2F3167 66.89%, #454896 100%);
+  box-shadow: 10px 10px 15px 0px rgba(88, 106, 226, 0.20) inset, 15px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+}
+.escenario-3 {
+  background: linear-gradient(180deg, #161730 -12.01%, #22244B 34.2%, #2F3167 66.89%, #454896 100%);
+}

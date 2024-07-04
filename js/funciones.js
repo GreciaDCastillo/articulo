@@ -156,4 +156,44 @@ document.addEventListener('DOMContentLoaded', function () {
       escenario3.classList.add('visible');
     }, 1000); // Duración de la transición (1 segundo)
   }
+  window.addEventListener('scroll', function () {
+    const container2 = document.querySelector('.container_2');
+    const container2Position = container2.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 2;
+  
+    if (container2Position < screenPosition) {
+      const elemento1 = document.querySelector('.container_2 .elemento-1');
+      const elemento2 = document.querySelector('.container_2 .elemento-2');
+  
+      elemento1.style.opacity = '0'; // Oculta elemento 1
+      elemento2.style.opacity = '1'; // Muestra elemento 2
+  
+      setTimeout(() => {
+        elemento1.style.display = 'none'; // Oculta elemento 1 después de la transición
+      }, 1000); // Duración de la animación (1 segundo)
+    }
+  });
+  const elemento1 = document.querySelector('.container_2 .elemento-1');
+  const elemento2 = document.querySelector('.container_2 .elemento-2');
+
+  window.addEventListener('scroll', function () {
+    const container2 = document.querySelector('.container_2');
+    const container2Position = container2.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (container2Position < screenPosition) {
+      // Añadir animaciones de salida para elemento-1
+      elemento1.classList.add('animate__animated', 'animate__fadeOutRightBig');
+
+      // Esperar hasta que la animación de salida termine antes de mostrar elemento-2
+      elemento1.addEventListener('animationend', function handleAnimationEnd() {
+        elemento1.classList.add('hidden');
+        elemento2.classList.remove('hidden');
+        elemento2.classList.add('animate__animated', 'animate__fadeInLeft');
+
+        // Eliminar el listener para evitar múltiples llamadas
+        elemento1.removeEventListener('animationend', handleAnimationEnd);
+      });
+    }
+  });  
 });
