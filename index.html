@@ -6,6 +6,7 @@
     <title>Proyecto Parallax</title>
     <link rel="stylesheet" href="css/css.css" />
     <script src="js/funciones.js" defer></script>
+    <script src="js/gsap.js"></script>
     <!-- Defer agregado -->
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
@@ -28,6 +29,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
   </head>
   <script>
     tailwind.config = {
@@ -135,34 +138,56 @@
     </div>
       <div
         id="escenario-3" class="escenario-3 slide h-screen bg-fondo3 bg-cover bg-fixed hidden flex-col">
-      <section
-        class="container h-screen mx-auto py-20"> 
-          <div class="container px-40 py-40 m-auto flex justify-between gap-x-40 items-center inline-flex">
-            <p
-             class=" w-1/2 text-left text-blue-100 text-[29px] font-normal font-['Quicksand']"
-            >
-            Con el crecimiento de Internet, 
-            hubo una demanda creciente de 
-            diseño web. Los sitios web en 
-            los años 2000 a menudo presentaban 
-            diseños coloridos, animaciones Flash 
-            y elementos visuales llamativos. 
-            Sin embargo, también había una tendenc
-            ia hacia la simplicidad y la usabilidad, 
-            con un enfoque en la navegación intuitiva 
-            y la accesibilidad.
-            </p>
-            <p
-             class=" w-1/2 text-right text-blue-100 text-[29px] font-normal font-['Quicksand']"
-            >
-            Tambien el diseño de interfaces de usuariose volvió más importante. 
-            Introducioendo estilos visuales como el skeuomorfismo, que imitaba 
-            la apariencia de objetos del mundo real, y el diseño de "botones" en 
-            las interfaces gráficas de usuario.
+        <section
+          class="container h-screen mx-auto py-20"> 
+            <div class="container_3 px-40 py-40 m-auto flex justify-between gap-x-40 items-center inline-flex">
+              <p
+              class=" w-1/2 text-left text-blue-100 text-[29px] font-normal font-['Quicksand']"
+              >
+              Con el crecimiento de Internet, 
+              hubo una demanda creciente de 
+              diseño web. Los sitios web en 
+              los años 2000 a menudo presentaban 
+              diseños coloridos, animaciones Flash 
+              y elementos visuales llamativos. 
+              Sin embargo, también había una tendenc
+              ia hacia la simplicidad y la usabilidad, 
+              con un enfoque en la navegación intuitiva 
+              y la accesibilidad.
+              </p>
+              <p
+              class=" w-1/2 text-right text-blue-100 text-[29px] font-normal font-['Quicksand']"
+              >
+              Tambien el diseño de interfaces de usuariose volvió más importante. 
+              Introducioendo estilos visuales como el skeuomorfismo, que imitaba 
+              la apariencia de objetos del mundo real, y el diseño de "botones" en 
+              las interfaces gráficas de usuario.
+              </p>
+            </div>
+            <div class="ventanas2">
+              <div class="ventanaimagen">
+                <div class="ventanaimagen-1"></div>
+                <div class="ventanaimagen-2"></div>
+                <div class="ventanaimagen-3"></div>
+              </div>
+              <div class="ventanapaint"></div>
+              <div class="ventanawarning">
+                <div class="ventanawarning-1"></div>
+                <div class="ventanawarning-2"></div>
+                <div class="ventanawarning-3"></div>
+              </div>
+            </div>
+        </section>
+        <section 
+        class="container h-screen mx-auto flex items-center justify-items-center"
+        >
+        <div class="container py-40 px-40 m-auto">
+            <p class="text-center text-blue-100 text-[29px] font-normal font-['Quicksand']">
+              El diseño de los años 2000 fue una mezcla vibrante de influencias tecnológicas, culturales
+              y estilísticas que reflejaron el optimismo y la experimentación de la era.
             </p>
           </div>
-      </section>
-        
+        </section>
       </div>
     </div>
 
